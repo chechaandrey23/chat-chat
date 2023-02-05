@@ -1,0 +1,14 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "(cd server && npm install --no-audit); (cd client && npm install --force --no-audit);",
+    "start": "(cd server && npm run start);",
+    "building": "(cd server && npm run build); (cd client && npm run build);"
+  },
+  "author": "",
+  "license": "ISC"
+}
